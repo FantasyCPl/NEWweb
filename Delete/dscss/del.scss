@@ -1,0 +1,37 @@
+select {
+    $spacer:2%;
+        outline:none;
+        background:white;
+        width:100%;
+        padding:10px $spacer;
+        border-color:$light-grey;
+        font-size:1.1em;
+        color:$light-grey;
+    transition:all 333ms ease-in-out;
+        &:active, &:focus {border-color:$dark-grey;}
+        + .genericon {
+              position: absolute;
+              right:$spacer;
+              top: 40%;
+              color:$light-grey;
+              pointer-events:none;
+        }
+  }
+  
+  #select-wrap, h1 {
+    position:relative;
+    width:50%;
+    margin:15px auto;
+  }
+  
+  #tooltip {
+    position:absolute;
+    top:5px;
+    right:-120px;
+    padding:10px;
+    text-align:right;
+    background:$light-grey;
+    color:$dark-grey;
+    font-weight:300;
+  }
+  
