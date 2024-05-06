@@ -26,7 +26,7 @@
       </div>
       <div><input type="hidden" name="MAX_FILE_SIZE" value="10000000" /></div>
       <div>
-        <input type="file" name="userfile"> <input>
+        <input type="file" name="userfile">
       </div>
      <div class="inputBx">
         <input type="submit" value="Add">
