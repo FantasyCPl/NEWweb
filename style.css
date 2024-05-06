@@ -47,6 +47,7 @@ body {
 .Add .inputBx {
   position: relative;
   width: 100%;
+  margin-bottom: 5px;
 }
 .Add .inputBx input {
   position: relative;
@@ -69,6 +70,16 @@ body {
 }
 .Add .inputBx input::placeholder {
   color: rgba(255, 255, 255, 0.75);
+}
+.Add .inputBx select{
+  background: linear-gradient(45deg, #ff357a, #fff172);
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+}
+.Add .inputBx option{
+  
+  background-color: #f15922;
 }
 .Add .links {
   position: relative;
