@@ -24,7 +24,7 @@
       <div class="inputBx">
         <input type="int" placeholder="phone" name="phone">
       </div>
-      <div><input type="hidden" name="MAX_FILE_SIZE" value="10000000" /></div><!---->
+      <div><input type="hidden" name="MAX_FILE_SIZE" value="10000000" /></div>
       <div>
         <input type="file" name="userfile">
       </div>
