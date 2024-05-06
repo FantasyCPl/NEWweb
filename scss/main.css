@@ -98,7 +98,6 @@ display: flex;
 position: relative;
 padding: 0 10px;
 max-width: 100%;
-margin-bottom: 30px;
 /*.slick-center {
   opacity: 1;
 }*/
@@ -456,9 +455,9 @@ content: "";
 display: table;
 }
 .main section {
-padding: 0 1rem;
-min-height: 400px;
-height: auto;
+  padding: 1rem 1rem;
+  min-height: 400px;
+  height: auto;
 }
 
 .feature {
