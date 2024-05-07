@@ -9,6 +9,7 @@
     <script src="slider.js"></script>
 
     <?php require 'db.php'; ?>
+    
 
     <link rel="stylesheet" href="slick.css">
     <link rel="stylesheet" href="scss/main.css">
@@ -17,6 +18,13 @@
   <div class="wrap">
     <div class="brand">
       <a href="../index.php"><span>Home Page</span></a>
+      <?php if(isset($_COOKIE['data']) == false): ?>
+      <a href="../Sign/index.php"><span>Sign in</span></a>
+      <?php endif; ?>
+      <?php
+      if(isset($_COOKIE['data']) == true): ?>
+      <a href="../Sign/fast.php"><span>Sign out</span></a>
+      <?php endif; ?>
     </div>
       <button id="mobile-btn" class="hamburger-btn">
       <span class="hamburger-line"></span>
@@ -34,7 +42,7 @@
 
 <header class="hero">
   <div class="content">
-    <p>Best university that you ever saw!</p>
+    <p>Best university that you've ever seen!</p>
   </div>
 </header>
 
@@ -49,7 +57,12 @@
     <section class="feature">
       <div class="tab-row">
         <div class="col-12">
+          <?php 
+          $check = $db->query("SELECT * FROM member WHERE `login`= '".$_COOKIE['data']."'");
+          $check = $check->fetch_assoc();
+          if($check['influence']):?>
         <a href="../Delete/delete.php"><span>Delete person</span></a> <a href="../Ad/ad.php"><span>Add person</span></a>
+          <?php endif; ?>
 		<div class="wrapper">
 			<div class="slider">
 
